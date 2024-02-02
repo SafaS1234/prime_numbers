@@ -18,7 +18,7 @@ void primeFactors(int n)
 			cout << i << " "; 
 			n = n/i; 
 		} 
-	} 
+	}  
  
 	if (n > 2) 
 		cout << n << " "; 
@@ -28,8 +28,15 @@ int main()
 { 
 	int num; 
 
-    cout << "Enter a number: \n";
+    cout << "Enter a number greater than 1: \n";
     cin >> num;
+    
+    if (num <= 1)
+    {
+        cout << "I cannot calculate the prime factors of that number.\n";
+        cout << "Enter a number greater than 1: \n";
+        cin >> num;
+    }
     cout << "Prime factors of " << num << " = ";
 	primeFactors(num); 
 
