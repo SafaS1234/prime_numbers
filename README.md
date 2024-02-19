@@ -2,6 +2,8 @@
  
  A function that calculates all prime numbers of the number that the user inputs. This also contains a test driver to check if the program runs correctly.
 
+ My pull request was approved by Jacob Doose.
+
 _Prerequisites__
 C++ v11
 
